@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* Corpo */
 body {
     font-family: 'Arial', sans-serif;
@@ -30,7 +32,7 @@ h2 {
 }
 
 /* Card container */
-div {
+.card {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
@@ -41,7 +43,7 @@ div {
 }
 
 /* Efeito hover */
-div:hover {
+.card:hover {
     transform: translateY(-5px);
 }
 
