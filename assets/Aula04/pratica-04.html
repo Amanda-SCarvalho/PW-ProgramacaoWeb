@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/aulas.css">
+</head>
+
+<body>
+    <header>
+        <div class="container ajuste-flex">
+            <h1><a href="/index.html">Programação WEB</a></h1>
+            <nav>
+                <ul>
+                    <li class="item-menu"><a href="/index.html">Início</a></li>
+                    <li class="item-menu"><a href="index.html">Prática</a></li>
+                    <li class="item-menu"><a href="pratica-04.html">Teoria</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h2>Lista de cursos da fatec</h2>
+        <table>
+            <thead style="background-color: aqua; ">
+                <tr>
+                    <th>Nome do curso</th>
+                    <th>Carga Horaria</th>
+                    <th>Modalidades</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody style="border: 1px solid">
+                <tr>
+                    <td>Programação web</td>
+                    <td>120 horas</td>
+                    <td>Presencial</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Estrutura de Dados</td>
+                    <td>80H</td>
+                    <td>Presencial</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Engenharia de Software</td>
+                    <td>80H</td>
+                    <td>Presencial</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>80H</td>
+                    <td>Presencial</td>
+                    <td>Ativo</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+        <h2>Ranking de Campeoes da Copa Brasil</h2>
+        <ol>
+            <li>Cruzeiro (6)</li>
+            <li>Flamengo</li>
+            <li>Gremio</li>
+            <li>Palmeiras</li>
+            <li>Corinthias</li>
+        </ol>
+
+        <h2>Lista de Linguagens de Programação</h2>
+        <ul>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ul>
+
+        <h2>Formularios</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digte o seu nome completo">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="exemplo@exemplo.com">
+            </div>
+            <div>
+                <label for="Telefone">Telefone</label>
+                <input type="tel" name="telefone" placeholder="(99) 99999-9999">
+                <label for="curso">Curso Desejado</label>
+                <select id="curso">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="PW">Programação Web</option>
+                    <option value="ED">Estrutura de Dados</option>
+                    <option value="ES">Engenharia de Software</option>
+                </select>
+            </div>
+            <div>
+                <h3>Preferencias</h3>
+                <input type="radio" name="modalidade" value="presencial"> Presencia
+
+                <label>
+                    <input type="radio" name="modalidade" value="hibrido"> hibrido
+                </label>
+                <label>
+                    <input type="radio" name="modalidade" value="remoto"> remoto
+                </label>
+
+
+                <label>
+                    <input type="checkbox" name="acessibilidade" value="recursos"> Preciso de Acessibilidade
+                </label>
+                <label>
+                    <input type="checkbox" name="recursos" value="material"> material impresso
+                </label>
+            </div>
+
+            <div>
+                <label for="data"> Data</label>
+                <input type="date" name="data" />
+
+                <label for="nivel">Nivel de
+                    Experiencia
+                </label>
+                <input type="range" name="nivel" min="0" max="10" value="5">
+
+                <label for="foto de estudante"></label>
+                <input type="file" name="arquivo" accept="image/*">
+            </div>
+            <div>
+                <label for="mensage">Mensagem</label>
+                <textarea name="mensagem" rows="5"></textarea>
+            </div>
+
+            <div>
+                <button type="submit"> Enviar inscrição</button>
+                <button type="reset">limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
