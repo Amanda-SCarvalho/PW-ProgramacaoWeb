@@ -1,0 +1,179 @@
+:root {
+    --bg-main: #0D1117;
+    --bg-card: #161B22;
+    --text-primary: #E6EDF3;
+    --text-secondary: #8B949E;
+    --accent-blue: #58A6FF;
+    --accent-light-blue: #93c5fd;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NavBar  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-card);
+    padding: 0px 15px;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid #30363D;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    margin: 5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.ajuste-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a li {
+    transition: all 300ms ease;
+}
+
+/* Links */
+header a {
+    color: #f3f4f6;
+    /* quase branco */
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.item-menu {
+    list-style: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+}
+
+.item-menu:hover {
+    background-color: rgba(243, 244, 246, 0.1);
+    border-radius: 10px;
+}
+
+.item-menu:hover a {
+    color: var(--accent-light-blue);
+}
+
+/* Corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+/* Título principal */
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #f3f4f6;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+/* Subtítulo */
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--accent-blue);
+    margin-bottom: 30px;
+}
+
+/* Card container */
+.card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Efeito hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Títulos dos cards */
+h3 {
+    font-size: 1.5em;
+    color: var(--accent-blue);
+    /* azul médio */
+    margin-bottom: 15px;
+}
+
+/* Listas e descrições */
+.card ul,
+.card dl {
+    margin-left: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #E6EDF3;
+    /* texto escuro dentro dos cards */
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #E6EDF3;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
