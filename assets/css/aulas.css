@@ -7,6 +7,10 @@
     --accent-light-blue: #93c5fd;
 }
 
+body {
+    background-color: #f4f4f9;
+}
+
 
 /* NavBar  */
 header {
