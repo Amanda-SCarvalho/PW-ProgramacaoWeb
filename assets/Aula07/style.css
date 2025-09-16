@@ -1,0 +1,89 @@
+body {
+    /* background-color: whitesmoke; */
+    background-color: #0D1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(136, 141, 158, 0.478);
+    max-width: 350px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: blueviolet;
+    margin: 0 0 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card p {
+    font-size: 0.90rem;
+    margin: 0 0 15px;
+    color: dimgray;
+}
+
+.btn {
+    padding: 10px 15px;
+    color: white;
+    background-color: blueviolet;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    /* display: inline-block; */
+    text-align: center;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(87, 21, 148);
+    cursor: pointer;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 10px;
+}
+
+@media screen and (min-width:600px) {
+    .card {
+        max-width: 500px;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        max-width: 700px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
+    .card-body {
+        flex: 1;
+    }
+}
