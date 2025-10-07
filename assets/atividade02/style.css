@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    color: #58A6FF;
+    text-align: center;
+    padding: 20px;
+}
+
+body{
+    background-color: #0D1117;
+}
+
+.container{
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    
+}
+
+#radio{
+    display: flex;
+}
+
+#radio label,
+#radio input {
+    display: flex;
+    margin: 5px 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button{
+    background-color: #4094f5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px auto;
+    width: 60%;
+}
+
+button:hover{
+    background-color: #00326b;
+    cursor: pointer;
+}
+
+.telDate {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.telDate input {
+  flex: 1;
+}
